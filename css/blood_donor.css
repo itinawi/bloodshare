@@ -13,8 +13,16 @@ body {
 #map {
   height: 300px;
   width: 300px;
+  display: inherit;
 }
 
-.subtitle{
+.subtitle {
   color:black;
+  display: inherit;
+  position: relative;
+  top:0;
+}
+
+#map-form {
+  display: block;
 }
