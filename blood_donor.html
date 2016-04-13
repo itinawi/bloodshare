@@ -58,26 +58,123 @@
     <div id = "notification-form" class = "form">
       <h3 class = "subtitle">3. Notification</h3>
       <h4 class = "subsubtitle">How frequently do you want to be notified by blood seekers?</h4>
-      <div class="btn-group">
-        <button type="button" class="btn btn-danger">Daily</button>
-        <button type="button" class="btn btn-danger">Weekly</button>
-        <button type="button" class="btn btn-danger">Monthly</button>
-      </div>
       <br>
+      <style>
+
+      </style>
+      <!--
+        .pagination li.notactive a {
+            color: #ee5f5b;
+        }
+      -->
       <ul class="pagination">
-        <li><a href="#">Daily</a></li>
+        <li class="notactive"><a href="#">Daily</a></li>
         <li class="active"><a href="#">Weekly</a></li>
-        <li><a href="#">Monthly</a></li>
+        <li class="notactive"><a href="#">Monthly</a></li>
       </ul>
     </div>
     <br>
-    <div id = "Transportation-form" class = "form">
+    <div id = "transportation-form" class = "form">
       <h3 class = "subtitle">3. Transportation</h3>
       <h4>Do you have Transportation?</h4>
       <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
       <label class="radio-inline"><input type="radio" name="optradio">No</label>
       <label class="radio-inline"><input type="radio" name="optradio">Only in emergencies</label>
     </div>
+    <br>
+    <div id = "visited_countries-form" class = "form">
+      <h3>4. Countries visited before</h3>
+      <h4>Select countries you have visited in the last 2 month.</h4>
+      <select multiple data-role="tagsinput">
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Washington">Washington</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Beijing">Beijing</option>
+        <option value="Cairo">Cairo</option>
+      </select>
+    </div>
+    <br>
+
+    <div id = "time_availability-form" class = "form">
+      <h3>5. Time Availability</h3>
+      <h4>Please Indicate your time availability in the following table</h4>
+      <div class="container">
+        <p></p> 
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">1:00 pm</a></li></ul></td>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">1:00 pm</a></li></ul></td>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">1:00 pm</a></li></ul></td>
+            </tr>
+            <tr>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">2:00 pm</a></li></ul></td>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">2:00 pm</a></li></ul></td>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">2:00 pm</a></li></ul></td>
+            </tr>
+            <tr>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">3:00 pm</a></li></ul></td>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">3:00 pm</a></li></ul></td>
+              <td><ul class="pagination" id = "timeslotbutton1" ><li class="notactive"><a href="#">3:00 pm</a></li></ul></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div id = "diseases-form" class = "form">
+      <h3>6. Check for diseases</h3>
+      <h4>Do you have any of the following diseases:</h4>
+      <br>
+      <div id = "AIDS-form" class = "form">
+        <h5 class = "disease_label">AIDs</h4>
+        <div class = "question">
+          <ul class="pagination">
+            <li class="notactive"><a href="#">Yes</a></li>
+            <li class="active"><a href="#">No</a></li>
+            <li class="notactive"><a href="#">May Be</a></li>
+          </ul>
+        </div>
+        <br>        
+        <h5 class = "disease_label">Hepatites B</h4>
+        <div class = "question">
+          <ul class="pagination">
+            <li class="notactive"><a href="#">Yes</a></li>
+            <li class="active"><a href="#">No</a></li>
+            <li class="notactive"><a href="#">May Be</a></li>
+          </ul>
+        </div>
+        <br>
+        <h5 class = "disease_label">Hepatites C</h4>
+        <div class = "question">
+          <ul class="pagination">
+            <li class="notactive"><a href="#">Yes</a></li>
+            <li class="active"><a href="#">No</a></li>
+            <li class="notactive"><a href="#">May Be</a></li>
+          </ul>
+        </div>
+        <br>
+        <h5 class = "disease_label">Cancer</h4>
+        <div class = "question">
+          <ul class="pagination">
+            <li class="notactive"><a href="#">Yes</a></li>
+            <li class="active"><a href="#">No</a></li>
+            <li class="notactive"><a href="#">May Be</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
     <script language="JavaScript" type="text/javascript" src="external_js/jquery-1.12.3.js"></script>    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvGVfn7ZzrVnkFqBCmMuKR8h5HE7JlZOU"
     defer></script>
