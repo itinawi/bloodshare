@@ -9,6 +9,16 @@
 	width:120%;
 }
 
+header{
+	background:rgb(245, 230, 186);
+	color:black;
+}
+
+#about{
+	background:rgb(245, 230, 186);
+	color:black;
+}
+
 
 /*=== 2. Anchor Link ===*/
 a {
