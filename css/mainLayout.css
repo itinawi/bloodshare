@@ -1,0 +1,24 @@
+#logo {
+	width: 400px;
+
+}
+
+#page_name {
+	color: #B0171F;
+	font-family: 'Trebuchet MS';
+}
+
+* {
+	/*background-color: #CDCDC1;*/
+	/*background-color: #EEE9E9;*/
+	background-color: #FAF0E6;
+	font-family: 'Trebuchet MS';
+}
+
+input {
+	background-color: white;
+}
+
+div {
+	padding: 10px;
+}
