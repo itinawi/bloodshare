@@ -1,16 +1,28 @@
 <html>
 	<link rel="stylesheet" type="text/css" href="../css/mainLayout.css">
+	<link rel="stylesheet" type="text/css" href="../css/seeker_signup.css">
+	<link rel="stylesheet" href="../bootstrap/bootstrap/css/bootstrap.min.css">
+	<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<title>
 		Blood Seeker Sign-up
 	</title>
 
 	<head> 
 		<img id="logo" src="../images/bloodshare.png" alt="some_text">
+
+    	<!-- jQuery library -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	    <!-- Latest compiled JavaScript -->
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="../js/seeker.js"></script>
+	    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<h1 id="page_name">Blood Seeker Sign Up</h1>
 	</head>
 
 	<body>
-		<div id="first_cell" style="display: inline-block">
+		<div id="first_cell" style="display: inline-block" class="col-sm-6">
 			<h2>Location of Donation</h2>
 			<img id="google_maps" src="../images/google_maps.jpeg" alt="google maps image">
 			<div>
@@ -24,14 +36,55 @@
 				City: <input id="city">
 				Country: <input id="country">
 			</div>
-		</div id="second_cell">
-			<div style="border-left:1px solid #000;height:250px; display: inline-block;"></div>
-		<div id="third_cell">		
-			
 		</div>
+			<!-- <div style="border-left:1px solid #000;height:250px; display: inline-block;"></div>		 -->
+     	<div id="third_cell" style="display: inline-block" class="col-sm-6">
+	     	<div class="dropdown">
+		        <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Choose blood type
+		        <span class="caret"></span></button>
+		        <ul id = "menu3-items" class="dropdown-menu">
+		          <li><a href="">A</a></li>
+		          <li><a href="">B</a></li>
+		          <li><a href="">O</a></li>
+		        </ul>
+		    </div>
+		    <br>
+	        <br>
+	        Emergency Level: <span id="emergency_level">1</span>
+	        <br>
+	        <br>
+	        <div id="slider1"></div>
+		    <br>
+	        <br>
+	        Donor Proximity: <!--<span id="donor_proximity">1 km</span> -->
+	        <!-- <div id="slider2"></div> -->
+	        <!-- <br> -->
+	        <form>
+				<input type="radio" name="distance" value="1km" checked>
+			  	<input type="radio" name="distance" value="5km" style="margin-left: 30px;">
+			  	<input type="radio" name="distance" value="10km" style="margin-left: 30px">
+			  	<input type="radio" name="distance" value="20km" style="margin-left: 30px">
+			  	<input type="radio" name="distance" value="40km" style="margin-left: 30px">
+			  	<input type="radio" name="distance" value="60+km" style="margin-left: 30px">
+			  	<br>
+			  	<span>1km</span>
+			  	<span style="margin-left: 15px">5km</span>
+			  	<span style="margin-left: 15px">10km</span>
+				<span style="margin-left: 10px">20km</span>
+			  	<span style="margin-left: 10px">40km</span>
+			  	<span style="margin-left: 10px">60+km</span>
+			</form>
 
+			Can you provide transportation for matched donors?
+			<form>
+				<input type="radio" name="transportation" value="Yes" checked> Yes
+			  	<input type="radio" name="transportation" value="No" style="margin-left: 30px;"> No
+			  	<input type="radio" name="transportation" value="Only if they cannot" style="margin-left: 30px;"> Only if they don't have
+			</form>
 		</div>
+		<br>
 
+		<button class="btn btn-danger" type="button" style="position: absolute; left: 1000px; top: 600px;">Submit
 
 	</body>
 </html>
