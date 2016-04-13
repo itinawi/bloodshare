@@ -118,3 +118,17 @@ li{
   position: relative;
   left:50%;
 }
+
+div.timegrid-ylabels-window {
+    position: absolute;
+    overflow: hidden;
+}
+div.timegrid-ylabels-window {
+    border-top: 1px solid #a7a37e;
+    border-bottom: 1px solid #a7a37e;
+    border-right: 1px solid #a7a37e;
+}
+div.timegrid-xlabels {
+    position: absolute;
+    left: 0px;
+}

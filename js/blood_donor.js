@@ -31,5 +31,6 @@ $(document).ready(function() {
   add_disease('#group2','Hepatitis C');
   $("#group2").append('<br>');  
   add_disease('#group2','Cancer');
-
+  
+  
 });
