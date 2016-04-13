@@ -20,5 +20,17 @@ $(document).ready(function() {
     marker.setMap(map);
     myMarker = marker;
   });
-
+  
+  function add_disease(group,name){
+    var box;
+    box = document.getElementById("template-form").firstChild.cloneNode(true);
+    $(box).find('.disease_label').html(name);
+    $(group).append(box);
+  }
+  add_disease('#group1','Hepatitis B');
+  add_disease('#group2','Hepatitis C');
+  $("#group2").append('<br>');  
+  add_disease('#group2','Cancer');
+  
+  
 });
