@@ -13,8 +13,25 @@ body {
 #map {
   height: 300px;
   width: 300px;
+  display: inherit;
 }
 
-.subtitle{
+#map-subtitle {
+  color: black;
+  display: inherit;
+  vertical-align: top;
+}
+
+.subtitle {
   color:black;
+  display: inherit;
+  vertical-align:top-text;
+}
+
+.form{
+  display: inline-block;
+}
+
+.dropdown{
+  display: inline-block;
 }
