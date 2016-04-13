@@ -16,13 +16,22 @@ body {
   display: inherit;
 }
 
+#map-subtitle {
+  color: black;
+  display: inherit;
+  vertical-align: top;
+}
+
 .subtitle {
   color:black;
   display: inherit;
-  position: relative;
-  top:0;
+  vertical-align:top-text;
 }
 
-#map-form {
-  display: block;
+.form{
+  display: inline-block;
+}
+
+.dropdown{
+  display: inline-block;
 }
