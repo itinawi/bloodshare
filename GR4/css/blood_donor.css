@@ -10,7 +10,7 @@ body {
 
 }
 
-#map {
+#myMap {
   height: 250px;
   width: 250px;
   display: inherit;
@@ -106,17 +106,6 @@ table .pagination{
 
 li{
   list-style: none
-}
-
-#submit_button{
-  position: absolute;
-  width:210px;
-  left:420px;
-}
-
-#submit_wrapper{
-  position: relative;
-  left:50%;
 }
 
 div.timegrid-ylabels-window {
