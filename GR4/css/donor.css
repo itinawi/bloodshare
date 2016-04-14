@@ -1,3 +1,15 @@
+#submit_button{
+  position: absolute;
+  width:100%;
+  left:420px;
+}
+
+#submit_wrapper{
+  position: absolute;
+  top:0;
+  left:50%;
+}
+
 /*.navbar-brand {
   padding: 0px;
 }

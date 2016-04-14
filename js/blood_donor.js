@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  /*
   var map;
   var myMarker = null;
   initMap();
@@ -20,7 +21,7 @@ $(document).ready(function() {
     marker.setMap(map);
     myMarker = marker;
   });
-  
+  */
   function add_disease(group,name){
     var box;
     box = document.getElementById("template-form").firstChild.cloneNode(true);
@@ -43,10 +44,8 @@ $(document).ready(function() {
     }
     row += '</tr>';
     var labelTop = 15.9286 * hour;
-    console.log(labelTop);
-    console.log(String(labelTop));
     var hour_tag = "am";
-    if(hour > 12){
+    if(hour >= 12){
       hour_tag = "pm";
     }
     hour_string = String(hour % 12);
