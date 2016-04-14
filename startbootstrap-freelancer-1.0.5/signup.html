@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    
+    <script src="js/signup.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Blood Share</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" style="width:10%;height:10%" src="img/BloodShare.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Blood Share</span>
+                        <span class="skills">Sign Up</span>
+                    </div>
+
+                    
+                     <!--  
+                    <div class="row">
+                        
+                            <form action="#" method="post" class="form" role="form">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                                        required autofocus />
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                                </div>
+                            </div>
+                            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+                            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+                            <input class="form-control" name="password" placeholder="New Password" type="password" />
+                            <label for="">
+                                Birth Date</label>
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Month">Month</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Day">Day</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <select class="form-control">
+                                        <option value="Year">Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                                Sign up</button>
+                            </form>
+                        
+                    </div>
+                -->
+                    <div id = "sign_up" class="text-center">
+                        <!-- Main Form -->
+                        <div class="login-form-1">
+                            <form id="login-form" class="text-left">
+                                <div class="login-form-main-message"></div>
+                                <div class="main-login-form">
+                                    <div class="login-group">
+                                        <div class="form-group">
+                                            <label for="lg_username" class="sr-only">Username</label>
+                                            <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_firstname" class="sr-only">First Name</label>
+                                            <input type="firstname" class="form-control" id="lg_firstname" name="lg_firstname" placeholder="first name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_lastname" class="sr-only">Last Name</label>
+                                            <input type="lastname" class="form-control" id="lg_lastname" name="lg_lastname" placeholder="last name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_emailaddress" class="sr-only">Email Address</label>
+                                            <input type="emailaddress" class="form-control" id="lg_emailaddress" name="lg_address" placeholder="email address">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_password" class="sr-only">Password</label>
+                                            <input type="paassword" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_confirmpassword" class="sr-only">Confirm Password</label>
+                                            <input type="confirmpassword" class="form-control" id="lg_confirmpassword" name="lg_confirmpassword" placeholder="confirm password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_telephone" class="sr-only">Telephone Number</label>
+                                            <input type="telephone" class="form-control" class="lg_telephone" name="lg_telephone" placeholder="telephone number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lg_birthday" class="sr-only">Date of Birth</label>
+                                            <input type="birthday" class="form-control" id="lg_birthday" name="lg_birthday" placeholder="date of birth">
+                                            
+                                        </div>
+                                        <button type="submit" class="login-button" id="login_button"><i class="fa fa-chevron-right"></i></button>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <!-- end:Main Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
