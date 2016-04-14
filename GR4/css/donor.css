@@ -7,10 +7,17 @@
 #submit_wrapper{
   position: absolute;
   top:0;
-  left:50%;
+  left:0%;
 }
 
-/*.navbar-brand {
+/*
+
+#submit_button{
+  position: absolute;
+  width:100%;
+  left:420px;
+}
+.navbar-brand {
   padding: 0px;
 }
 .navbar-brand img {
