@@ -11,8 +11,11 @@
 
     <title>Freelancer - Start Bootstrap Theme</title>
 
+
+
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
@@ -30,9 +33,12 @@
     <script src="js/jquery.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- datetimepicker shit -->
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.min.css"> -->
+    <!-- // <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script> -->
     
     
-    <script src="js/signup.js"></script>
+    <script src="../js/signup_2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -144,38 +150,125 @@
                                     <div class="login-group">
                                         <div class="form-group">
                                             <label for="lg_username" class="sr-only">Username</label>
-                                            <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
+                                            <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="Username">
                                         </div>
                                         <div class="form-group">
                                             <label for="lg_firstname" class="sr-only">First Name</label>
-                                            <input type="firstname" class="form-control" id="lg_firstname" name="lg_firstname" placeholder="first name">
+                                            <input type="firstname" class="form-control" id="lg_firstname" name="lg_firstname" placeholder="First Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="lg_lastname" class="sr-only">Last Name</label>
-                                            <input type="lastname" class="form-control" id="lg_lastname" name="lg_lastname" placeholder="last name">
+                                            <input type="lastname" class="form-control" id="lg_lastname" name="lg_lastname" placeholder="Last Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="lg_emailaddress" class="sr-only">Email Address</label>
-                                            <input type="emailaddress" class="form-control" id="lg_emailaddress" name="lg_address" placeholder="email address">
+                                            <input type="emailaddress" class="form-control" id="lg_emailaddress" name="lg_address" placeholder="Email Address">
                                         </div>
                                         <div class="form-group">
                                             <label for="lg_password" class="sr-only">Password</label>
-                                            <input type="paassword" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+                                            <input type="paassword" class="form-control" id="lg_password" name="lg_password" placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <label for="lg_confirmpassword" class="sr-only">Confirm Password</label>
-                                            <input type="confirmpassword" class="form-control" id="lg_confirmpassword" name="lg_confirmpassword" placeholder="confirm password">
+                                            <input type="confirmpassword" class="form-control" id="lg_confirmpassword" name="lg_confirmpassword" placeholder="Confirm Password">
                                         </div>
                                         <div class="form-group">
                                             <label for="lg_telephone" class="sr-only">Telephone Number</label>
-                                            <input type="telephone" class="form-control" class="lg_telephone" name="lg_telephone" placeholder="telephone number">
+                                            <input type="telephone" class="form-control" class="lg_telephone" name="lg_telephone" placeholder="Telephone Number">
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label for="lg_birthday" class="sr-only">Date of Birth</label>
                                             <input type="birthday" class="form-control" id="lg_birthday" name="lg_birthday" placeholder="date of birth">
                                             
+                                        </div> -->
+                                        <!-- <div class="form-group">
+                                            <div class="input-group date" id="datetimepicker">
+                                              <input type="text" class="form-control">
+                                              <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                              </span>
+                                            </div>
+                                        </div> -->
+                                        <div class = "feature" id = "date-of-birth" style="display:inline-block">
+                                            <div class="form-group">
+                                                <!-- <h4 style="position:relative; right:35%"> -->
+                                                <span style="font-weight:bold;">Day of Birth</span>
+                                                <div>
+
+                                                    <div class="form-group">
+                                                      <select class="form-control" style="width:50px;">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                        <option>25</option>
+                                                        <option>26</option>
+                                                        <option>27</option>
+                                                        <option>28</option>
+                                                        <option>29</option>
+                                                        <option>30</option>
+                                                        <option>31</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+<<<<<<< HEAD
                                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+=======
+                                        <div class = "feature" id = "month" style="display:inline-block">
+                                            <div class="form-group">
+                                                <!-- <h4 style="position:relative; right:35%">Blood Group</h4> -->
+                                                <span style="font-weight:bold;">Month of Birth</span>
+                                                <div>
+
+                                                    <div class="form-group">
+                                                      <select class="form-control" style="width:80px">
+                                                        <option>January</option>
+                                                        <option>February</option>
+                                                        <option>March</option>
+                                                        <option>April</option>
+                                                        <option>May</option>
+                                                        <option>June</option>
+                                                        <option>July</option>
+                                                        <option>August</option>
+                                                        <option>September</option>
+                                                        <option>October</option>
+                                                        <option>November</option>
+                                                        <option>December</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="display: inline-block">
+                                            <label for="Year" class="sr-only">Year</label>
+                                            <input type="year" class="form-control" class="year" name="Year of Birth" placeholder="Year of Birth">
+                                        </div>
+
+                                        <button type="submit" class="login-button" id="login_button"><i class="fa fa-chevron-right"></i></button>
+                                        
+>>>>>>> d4d702928d5ac2f44429b5f32d5d22b6d1da65ae
                                         
                                     </div>
                                     

@@ -1,0 +1,49 @@
+html {
+
+}
+
+div {
+	box-shadow: 0 0 0px black inset;
+}
+
+img {
+	max-width: 33%;
+	max-height: 33%;
+}
+
+.Input {
+	height: 50px;
+}
+.Body {
+	width: 100%;
+}
+
+.Information {
+	width: 45%;
+	float: left;
+}
+
+.TextFields {
+	width: 50%;
+	float: left;
+}
+
+.InputFields {
+	width: 50%;
+	float: right;
+}
+
+.Divider {
+	top: 10%;
+	bottom: 10%;
+
+	position: absolute;
+	left: 50%;
+
+	border-left: 1px solid black;
+}
+
+.Credentials {
+	width: 45%;
+	float: right;
+}
