@@ -101,7 +101,7 @@
                     <a target = "_blank" href ="https://www.google.com/intl/en/mail/help/about.html" style = "position:relative;top:15%" class = "btn btn-primary btn-lg"> <span class="glyphicon glyphicon-send"></span> Send Request!</a>
                     <br>
                     <br>
-                    <button style = "position:relative;top:15%" class = "btn btn-primary btn-lg"> <span class="glyphicon glyphicon-search"></span> Refine Search </button>
+                    <button id = "search" style = "position:relative;top:15%" class = "btn btn-primary btn-lg"> <span class="glyphicon glyphicon-search"></span> Refine Search </button>
                 </div>
             </div>
         </div>
@@ -203,6 +203,20 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+      $('.donor_mode').click(function(e) {
+        window.open("http://www.w3schools.com");
+      });
+
+      $('#search').click(function(e) {
+        window.location.replace("http://www.mit.edu/~uayyaz/bloodshare/pages/seeker_signup.html");
+      });
+
+    });
+    </script>
 
 
 </body>
