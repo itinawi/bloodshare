@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $('.donor_mode').click(function(e) {
-    window.open("http://www.w3schools.com");
+    window.location.replace("http://www.mit.edu/~uayyaz/bloodshare/GR4/donor_usman.html");
   });
 
   $('.seeker_mode').click(function(e) {
