@@ -43,6 +43,7 @@
     <script src="../jquery-locationpicker-plugin/dist/locationpicker.jquery.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -166,13 +167,14 @@
                               <p style="position:relative; right:1%">How frequently do you want to be notified by blood seekers?</p>
 
                               
-                              <ul style="position:relative; right:28%" class="pagination">
+                              <ul style="position:relative; right:28%" class="pagination pagination-sm">
                                 <li class="notactive"><a href="#">Daily</a></li>
                                 <li class="active"><a href="#">Weekly</a></li>
                                 <li class="notactive"><a href="#">Monthly</a></li>
                               </ul>
                         </div>
                     </div>
+                    <hr style="width:400px;position:relative; right:12%; border-color:black">
                     <div class = "feature">
                         <div class="form-group">
                             <!-- <div style="position:relative; right:35%"> -->
@@ -181,26 +183,30 @@
                               <p style="position:relative; right:25%">Do you have transportation?</p>
 
                               
-                              <ul style="position:relative; right:28%" class="pagination">
+                              <ul style="position:relative; right:28%" class="pagination pagination-sm">
                                 <li class="notactive"><a href="#">Daily</a></li>
                                 <li class="active"><a href="#">Weekly</a></li>
                                 <li class="notactive"><a href="#">Monthly</a></li>
                               </ul>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                      <h4 style="position:relative; right:23%">Countries visited before</h4>
-                      <p style="position:relative; right:7%">Select countries you have visited in the last 2 month.</p>
-                      <select multiple data-role="tagsinput">
-                        <option value="Amsterdam">Amsterdam</option>
-                        <option value="Washington">Washington</option>
-                        <option value="Sydney">Sydney</option>
-                        <option value="Beijing">Beijing</option>
-                        <option value="Cairo">Cairo</option>
-                      </select>
+                    <hr style="width:400px;position:relative; right:12%; border-color:black">
+                    <div class = "feature">
+                        <div class="form-group">
+                          <h4 style="position:relative; right:23%">Countries visited before</h4>
+                          <p style="position:relative; right:7%">Select countries you have visited in the last 2 month.</p>
+                          <select multiple data-role="tagsinput">
+                            <option value="Washington">Egypt</option>
+                            <option value="Washington">France</option>                            
+                            <option value="Amsterdam">Pakistan</option>
+                            <option value="Cairo">Sudan</option>
+                            <option value="Sydney">Syria</option>                            
+                            <option value="Amsterdam">United States of America</option>
+                            <option value="Amsterdam">United Kingdom</option>                            
+                            <option value="Beijing">India</option>
+                          </select>
+                        </div>
                     </div>
-
                 </div>
 
                 <div class="col-sm-6">
@@ -255,15 +261,15 @@
                       <p>Do you have any of the following diseases:</p>
                       <br>
                       <div class = "row">
-                        <div class = "span3" id = "group1">
+                        <div class = "col-sm-6" id = "group1">
                           <div id ="template-form"><div class = "one_disease-form">
 
-                                <div class = "span2">
+                                <div >
                                   <h5 class = "disease_label">AIDs</h5>
                                 </div>
-                                <div class = "span6">
-                                  <ul class="pagination">
-                                    <li class="notactive"><a href="">Yes</a></li>
+                                <div >
+                                  <ul class="pagination pagination-sm">
+                                    <li class="notactive"><a href="javascript:console.log('');">Yes</a></li>
                                     <li class="active"><a href="">No</a></li>
                                     <li class="notactive"><a href="">May Be</a></li>
                                   </ul>
@@ -272,7 +278,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class = "span3" id = "group2">
+                        <div class = "col-sm-6" id = "group2">
 
                         </div>
                       </div>
@@ -282,8 +288,7 @@
             </div>
             <div id = "submit-wrapper" class = "col-sm-2">       
                 <button type="button" class="btn btn-danger" id="submit_button">Submit</button>
-            </div>
-
+            </div>            
         </div>
     </header>
 
