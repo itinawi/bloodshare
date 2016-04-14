@@ -30,7 +30,6 @@ $(document).ready(function() {
   }
   add_disease('#group1','Hepatitis B');
   add_disease('#group2','Hepatitis C');
-  $("#group2").append('<br>');  
   add_disease('#group2','Cancer');
   function add_timegrid_cell(day_index, hour){
     day_strings = ['S','M','T','W','R','F','S'];
@@ -59,6 +58,16 @@ $(document).ready(function() {
   for(var hour = 0; hour < 24; hour++){
     add_timegrid_row(hour);
   }
-
   
+  $('.timegrid-vline').click(function(){
+    select_color = '#008080';
+    if($(this).attr('bgcolor') !=  select_color){
+      console.log(String($(this).attr('bgcolor')));
+      $(this).attr('bgcolor', select_color);
+    }else{
+      $(this).attr('bgcolor', 'white');      
+    }
+
+  });
+
 });
