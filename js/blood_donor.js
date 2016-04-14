@@ -67,7 +67,9 @@ $(document).ready(function() {
     }else{
       $(this).attr('bgcolor', 'white');      
     }
-
+    $('.notactive').click(function(){
+      console.log($('this').html());
+    });
   });
 
 });
