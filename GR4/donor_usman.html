@@ -18,12 +18,20 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/donor.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/blood_donor.css" />
+    <link rel="stylesheet" href="css/donor.css" />    
+    <link rel="stylesheet" href="../css/browse.css" />
+    <link rel="stylesheet" href="../css/timegrid.css" />
+    <link rel="stylesheet" href="../css/themes.css" />
+
+
      <!-- <link href="css/blood_donor.css" rel="stylesheet"> -->
 
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
+    <script language="JavaScript" type="text/javascript" src="../external_js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="../js/blood_donor.js"></script>   
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -70,13 +78,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="#">Email</a>
+                        <a href="#">ABOUT US</a>
                     </li>
                     <li>
                         <a href="#">FAQ</a>
                     </li>
                     <li class="dropdown">
-                      <a class="dropdown-toggle" id = "descriptiveModels" data-toggle="dropdown" href="#">Usman Ayyaz <span  style="font-size:1em" class="glyphicon glyphicon-user"></span></a>
+                      <a class="dropdown-toggle" id = "descriptiveModels" data-toggle="dropdown" href="#">Logout<span  style="font-size:1em"></span></a>
                       <ul class="dropdown-menu">
                         <li>
                           <a id='arima' data-toggle="modal" data-target="#arimaModal">Edit Info <span class="glyphicon glyphicon-pencil"></span></a>
@@ -99,7 +107,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-
+            <div class = "row">
                 <div class="col-sm-6">
                     <div class = "feature" id = "map">
                         <div class="form-group">
@@ -163,55 +171,120 @@
                                 <li class="active"><a href="#">Weekly</a></li>
                                 <li class="notactive"><a href="#">Monthly</a></li>
                               </ul>
+                        </div>
+                    </div>
+                    <div class = "feature">
+                        <div class="form-group">
+                            <!-- <div style="position:relative; right:35%"> -->
+                            <h4 style="position:relative; right:32%">Transportation</h4>
 
+                              <p style="position:relative; right:25%">Do you have transportation?</p>
 
+                              
+                              <ul style="position:relative; right:28%" class="pagination">
+                                <li class="notactive"><a href="#">Daily</a></li>
+                                <li class="active"><a href="#">Weekly</a></li>
+                                <li class="notactive"><a href="#">Monthly</a></li>
+                              </ul>
                         </div>
                     </div>
 
+                    <div class="form-group">
+                      <h4 style="position:relative; right:23%">Countries visited before</h4>
+                      <p style="position:relative; right:7%">Select countries you have visited in the last 2 month.</p>
+                      <select multiple data-role="tagsinput">
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Sydney">Sydney</option>
+                        <option value="Beijing">Beijing</option>
+                        <option value="Cairo">Cairo</option>
+                      </select>
+                    </div>
 
-
-
-
-
-
+                </div>
 
                 <div class="col-sm-6">
-                    Emergency Level: <span id="emergency_level">1</span>
-                    <br>
-                    <br>
-                    <div id="slider1"></div>
-                    <br>
-                    <br>
-                    Donor Proximity: <!--<span id="donor_proximity">1 km</span> -->
-                    <!-- <div id="slider2"></div> -->
-                    <!-- <br> -->
-                    <form>
-                        <input type="radio" name="distance" value="1km" checked>
-                        <input type="radio" name="distance" value="5km" style="margin-left: 30px;">
-                        <input type="radio" name="distance" value="10km" style="margin-left: 30px">
-                        <input type="radio" name="distance" value="20km" style="margin-left: 30px">
-                        <input type="radio" name="distance" value="40km" style="margin-left: 30px">
-                        <input type="radio" name="distance" value="60+km" style="margin-left: 30px">
-                        <br>
-                        <span>1km</span>
-                        <span style="margin-left: 15px">5km</span>
-                        <span style="margin-left: 15px">10km</span>
-                        <span style="margin-left: 10px">20km</span>
-                        <span style="margin-left: 10px">40km</span>
-                        <span style="margin-left: 10px">60+km</span>
-                    </form>
 
-                    Can you provide transportation for matched donors?
-                    <form>
-                        <input type="radio" name="transportation" value="Yes" checked> Yes
-                        <input type="radio" name="transportation" value="No" style="margin-left: 30px;"> No
-                        <input type="radio" name="transportation" value="Only if they cannot" style="margin-left: 30px;"> Only if they don't have
-                    </form>
+                    <div id = "time_availability-form" class = "form">
+                        <h4 style="position:relative;">TIME AVAILABILITY</h4>
+                        <p>Please Indicate your time availability in the following table</p>
+                        <div>
+                        <div id="mini-timegrid" tg:role="grid" tg:views="week" tg:eventsource="miniEventSource" tg:mini="true" tg:daystart="8" tg:dayend="23" tg:listener="showClassesDuringTime" tg:gridlistener="showClickedClassDetails" tg:gridlistenerinput="getClickedClass" style="width: 250px; height: 410px; position: relative; left:120px;" class="timegrid-default">
+                          <div class="timegrid-iterator"></div>
+                          <div media="print" class="timegrid-view print" style="top: 0px; height: 410px; display: block;">
+                            <div class="timegrid-grid-window" style="overflow: visible; top: 24px; left: 24px; right: 0px; bottom: 0px; height: 410px; width: 214px;">
+                              <div class="timegrid-grid" style="height: 410px; width: 214px;">
+                                <div class="timegrid-events"></div>
+                                <table class="timegrid-gridlines">
+                                  <tbody id = "timegrid-tbody">
+                                    <tr id = "grid_hour-0" class="timegrid-hline" style="height: 15.9286px;">
+                                      <th classid="S0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="M0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="T0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="W0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="R0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="F0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="S0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="timegrid-xlabels-window" style="height: 24px; width: 214px; left: 23px;">
+                              <div class="timegrid-xlabels" style="height: 24px; width: 214px; top: 0px;">
+                                <div class="timegrid-label" style="width: 30.4286px; left: 0px;">Sun</div>
+                                <div class="timegrid-label" style="width: 30.4286px; left: 30.4286px;">Mon</div>
+                                <div class="timegrid-label" style="width: 30.4286px; left: 60.8571px;">Tue</div>
+                                <div class="timegrid-label" style="width: 30.4286px; left: 91.2857px;">Wed</div>
+                                <div class="timegrid-label" style="width: 30.4286px; left: 121.714px;">Thu</div>
+                                <div class="timegrid-label" style="width: 30.4286px; left: 152.143px;">Fri</div>
+                                <div class="timegrid-label" style="width: 30.4286px; left: 182.571px;">Sat</div>
+                              </div>
+                            </div>
+                            <div class="timegrid-ylabels-window" style="width: 24px; height: 410px; top: 23px;">
+                              <div id = "timegrid-ylabels-id" class="timegrid-ylabels" style="height: 410px; width: 24px; left:0px;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <hr style="width:500px;position:relative; right:0; border-color:black">
+                    <div id = "diseases-form" class = "form">
+                      <h4>Check for diseases</h4>
+                      <p>Do you have any of the following diseases:</p>
+                      <br>
+                      <div class = "row">
+                        <div class = "span3" id = "group1">
+                          <div id ="template-form"><div class = "one_disease-form">
+
+                                <div class = "span2">
+                                  <h5 class = "disease_label">AIDs</h5>
+                                </div>
+                                <div class = "span6">
+                                  <ul class="pagination">
+                                    <li class="notactive"><a href="">Yes</a></li>
+                                    <li class="active"><a href="">No</a></li>
+                                    <li class="notactive"><a href="">May Be</a></li>
+                                  </ul>
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class = "span3" id = "group2">
+
+                        </div>
+                      </div>
+
+                        </div>     
                 </div>
-
-
-
-                </div>
+            </div>
+            <div id = "submit-wrapper" class = "col-sm-2">       
+                <button type="button" class="btn btn-danger" id="submit_button">Submit</button>
+            </div>
 
         </div>
     </header>
