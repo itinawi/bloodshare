@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Bootstrap Core CSS -->
+
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/simple-sidebar.css" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/donor.css" rel="stylesheet">
+     <!-- <link href="css/blood_donor.css" rel="stylesheet"> -->
+
+
+     <title>BloodShare Results</title>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="pull-left" ><img style="width:40%" src="img/BloodShare.png"></a>
+
+                <a class="navbar-brand" href="#page-top">BloodShare</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#">Email</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" id = "descriptiveModels" data-toggle="dropdown" href="#">Usman Ayyaz <span  style="font-size:1em" class="glyphicon glyphicon-user"></span></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a id='arima' data-toggle="modal" data-target="#arimaModal">Edit Info <span class="glyphicon glyphicon-pencil"></span></a>
+                        </li>
+                        <li>
+                          <a id='trend' data-toggle="modal" data-target="#trendModal">Report Problem <span  class="glyphicon glyphicon-stats"></span></a>
+                        </li>
+                        <li>
+                          <a id='trend' data-toggle="modal" data-target="#trendModal">Log Out <span  class="glyphicon glyphicon-log-out"></span></a>
+                        </li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container tabler" style="padding-top:110px">
+
+            <div class="col-sm-2">
+                <div id = "wrapper">
+                <div id="sidebar-wrapper">
+                    <a target = "_blank" href ="https://www.google.com/intl/en/mail/help/about.html" style = "position:relative;top:15%" class = "btn btn-primary btn-lg"> <span class="glyphicon glyphicon-send"></span> Send Request!</a>
+                    <br>
+                    <br>
+                    <button style = "position:relative;top:15%" class = "btn btn-primary btn-lg"> <span class="glyphicon glyphicon-search"></span> Refine Search </button>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-sm-10" align = "center">
+               <h2 style="margin-top:40px">Matched Donors</h2>
+              <table class="table table-hover" style="margin-top:40px" align="center">
+                <thead>
+                  <tr>
+                    <th style="position:relative;left:3%"></th>
+                    <th style="position:relative;left:5%"></th>
+                    <th style="position:relative;left:0%">Name</th>
+                    <th style="position:relative;left:0%">Blood Group</th>
+                    <th style="position:relative;left:0%">Proximity</th>
+                    <th style="position:relative;left:0%">Contact Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                    </td>
+                    <td><img src = "img/user.jpeg"></td>
+                    <td><a>John Adams<a></td>
+                    <td>A+</td>
+                    <td>2 Km</td>
+                    <td>john@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                    </td>
+                    <td><img src = "img/user.jpeg"></td>
+                    <td>Albert Sina</td>
+                    <td>A-</td>
+                    <td>2 Km</td>
+                    <td>albert@example.com</td>
+                  </tr>
+                  <tr style="border:1px">
+                    <td>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                          </label>
+                        </div>
+                    </td>
+                    <td><img src = "img/user.jpeg"></td>
+                    <td>Giancoli Ide</td>
+                    <td>O+</td>
+                    <td>10 Km</td>
+                    <td>ide@example.com</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class = "glyphicon glyphicon-circle-arrow-down"></span>
+              <a href="#"> More Results </a>
+            </div>
+            
+        </div>
+    </header>
+
+ 
+
+
+   
+
+  
+    
+    
+  
+ 
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+
+</body>
+
+</html>
