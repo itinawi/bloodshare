@@ -1,9 +1,5 @@
 $(document).ready(function() {
 	
-	$("#lg_birthday").datetimepicker();
-
-	$("#login-button").click(function() {
-		console.log("1");
-	});
+	$("#lg_birthday").datepicker({ changeYear: true, changeMonth: true});
 
 });
