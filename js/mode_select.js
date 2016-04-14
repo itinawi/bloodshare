@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 
   $('.seeker_mode').click(function(e) {
-    window.replace("http://www.mit.edu/~uayyaz/bloodshare/pages/seeker_signup.html");
+    window.location.replace("http://www.mit.edu/~uayyaz/bloodshare/pages/seeker_signup.html");
   });
 
 });
