@@ -196,21 +196,20 @@
                           <h4 style="position:relative; right:23%">Countries visited before</h4>
                           <p style="position:relative; right:7%">Select countries you have visited in the last 2 month.</p>
                           <select multiple data-role="tagsinput">
-                            <option value="Washington">Egypt</option>
-                            <option value="Washington">France</option>                            
-                            <option value="Amsterdam">Pakistan</option>
-                            <option value="Cairo">Sudan</option>
-                            <option value="Sydney">Syria</option>                            
-                            <option value="Amsterdam">United States of America</option>
-                            <option value="Amsterdam">United Kingdom</option>                            
-                            <option value="Beijing">India</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="France">France</option>                            
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Syria">Syria</option>                            
+                            <option value="United_States_of_America">United States of America</option>
+                            <option value="United_Kingdom">United Kingdom</option>                            
+                            <option value="India">India</option>
                           </select>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-6">
-
                     <div id = "time_availability-form" class = "form">
                         <h4 style="position:relative;">TIME AVAILABILITY</h4>
                         <p>Please Indicate your time availability in the following table</p>
@@ -255,7 +254,6 @@
                         </div>
                       </div>
 
-
                     </div>
                     <hr style="width:500px;position:relative; right:0; border-color:black">
                     <div id = "diseases-form" class = "form">
@@ -294,18 +292,6 @@
         </div>
     </header>
 
- 
-
-
-   
-
-  
-    
-    
-  
- 
-    
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -328,13 +314,14 @@
     <script>
       $(document).on('click', '#test1', function(evt) {
           evt.preventDefault();
-          window.location.replace("user") 
+          window.location.replace("user");
       });
 
-      $(document).on('click', '#about', function(evt) {
+      $(document).on('click', '#submit_button', function(evt) {
           evt.preventDefault();
-          window.location.replace("about") 
+          window.location.replace("http://www.mit.edu/~uayyaz/bloodshare/pages/thanks.html") 
       });
+
     </script>
 
 </body>
