@@ -9,26 +9,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
-
-
+    <title>Blood Share Sign Up</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/donor.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+     <!-- <link href="css/blood_donor.css" rel="stylesheet"> -->
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/mainLayout.css">
+    <link rel="stylesheet" type="text/css" href="../css/seeker_signup.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/bootstrap/css/bootstrap.min.css"> -->
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
 
+    
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
 
     <script src="js/jquery.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -63,7 +63,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Blood Share</a>
+
+                <a href="#" class="pull-left" ><img style="width:40%" src="../GR4/img/bloodshare.png"></a>
+
+                <a class="navbar-brand" href="#page-top">Blood Share Sign Up</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,206 +91,120 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" style="width:10%;height:10%" src="img/bloodshare.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Blood Share</span>
-                        <span class="skills">Sign Up</span>
-                    </div>
-
-                    
-                     <!--  
-                    <div class="row">
-                        
-                            <form action="#" method="post" class="form" role="form">
-                            <div class="row">
-                                <div class="col-xs-6 col-md-6">
-                                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
-                                        required autofocus />
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                                </div>
-                            </div>
-                            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
-                            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
-                            <input class="form-control" name="password" placeholder="New Password" type="password" />
-                            <label for="">
-                                Birth Date</label>
-                            <div class="row">
-                                <div class="col-xs-4 col-md-4">
-                                    <select class="form-control">
-                                        <option value="Month">Month</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-4 col-md-4">
-                                    <select class="form-control">
-                                        <option value="Day">Day</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-4 col-md-4">
-                                    <select class="form-control">
-                                        <option value="Year">Year</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            <button class="btn btn-lg btn-primary btn-block" type="submit">
-                                Sign up</button>
-                            </form>
-                        
-                    </div>
-                -->
-                    <div id = "sign_up" class="text-center">
-                        <!-- Main Form -->
-                        <div class="login-form-1">
-                            <form id="login-form" class="text-left">
-                                <div class="login-form-main-message"></div>
-                                <div class="main-login-form">
-                                    <div class="login-group">
-                                        <div class="form-group">
-                                            <label for="lg_username" class="sr-only">Username</label>
-                                            <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="Username">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lg_firstname" class="sr-only">First Name</label>
-                                            <input type="firstname" class="form-control" id="lg_firstname" name="lg_firstname" placeholder="First Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lg_lastname" class="sr-only">Last Name</label>
-                                            <input type="lastname" class="form-control" id="lg_lastname" name="lg_lastname" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lg_emailaddress" class="sr-only">Email Address</label>
-                                            <input type="emailaddress" class="form-control" id="lg_emailaddress" name="lg_address" placeholder="Email Address">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lg_password" class="sr-only">Password</label>
-                                            <input type="paassword" class="form-control" id="lg_password" name="lg_password" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lg_confirmpassword" class="sr-only">Confirm Password</label>
-                                            <input type="confirmpassword" class="form-control" id="lg_confirmpassword" name="lg_confirmpassword" placeholder="Confirm Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lg_telephone" class="sr-only">Telephone Number</label>
-                                            <input type="telephone" class="form-control" class="lg_telephone" name="lg_telephone" placeholder="Telephone Number">
-                                        </div>
-                                        <!-- <div class="form-group">
-                                            <label for="lg_birthday" class="sr-only">Date of Birth</label>
-                                            <input type="birthday" class="form-control" id="lg_birthday" name="lg_birthday" placeholder="date of birth">
-                                            
-                                        </div> -->
-                                        <!-- <div class="form-group">
-                                            <div class="input-group date" id="datetimepicker">
-                                              <input type="text" class="form-control">
-                                              <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                              </span>
-                                            </div>
-                                        </div> -->
-                                        <div class = "feature" id = "date-of-birth" style="display:inline-block">
-                                            <div class="form-group">
-                                                <!-- <h4 style="position:relative; right:35%"> -->
-                                                <span style="font-weight:bold;">Day of Birth</span>
-                                                <div>
-
-                                                    <div class="form-group">
-                                                      <select class="form-control" style="width:50px;">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                        <option>11</option>
-                                                        <option>12</option>
-                                                        <option>13</option>
-                                                        <option>14</option>
-                                                        <option>15</option>
-                                                        <option>16</option>
-                                                        <option>17</option>
-                                                        <option>18</option>
-                                                        <option>19</option>
-                                                        <option>20</option>
-                                                        <option>21</option>
-                                                        <option>22</option>
-                                                        <option>23</option>
-                                                        <option>24</option>
-                                                        <option>25</option>
-                                                        <option>26</option>
-                                                        <option>27</option>
-                                                        <option>28</option>
-                                                        <option>29</option>
-                                                        <option>30</option>
-                                                        <option>31</option>
-                                                      </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class = "feature" id = "month" style="display:inline-block">
-                                            <div class="form-group">
-                                                <!-- <h4 style="position:relative; right:35%">Blood Group</h4> -->
-                                                <span style="font-weight:bold;">Month of Birth</span>
-                                                <div>
-
-                                                    <div class="form-group">
-                                                      <select class="form-control" style="width:80px">
-                                                        <option>January</option>
-                                                        <option>February</option>
-                                                        <option>March</option>
-                                                        <option>April</option>
-                                                        <option>May</option>
-                                                        <option>June</option>
-                                                        <option>July</option>
-                                                        <option>August</option>
-                                                        <option>September</option>
-                                                        <option>October</option>
-                                                        <option>November</option>
-                                                        <option>December</option>
-                                                      </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group" style="display: inline-block">
-                                            <label for="Year" class="sr-only">Year</label>
-                                            <input type="year" class="form-control" class="year" name="Year of Birth" placeholder="Year of Birth">
-                                        </div>
-
-                                        <button id = 
-                                        "submit_signup" type="submit" class="login-button" id="login_button"><i class="fa fa-chevron-right"></i></button>
-                                        
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                            </form>
+            
+            <div class="col-sm-6" style ="position:relative">
+                <div class = "feature" id = "Username">
+                    <div class="form-group">
+                        <h4 style="position:relative; text-align:left">Username</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/>
                         </div>
-                        <!-- end:Main Form -->
                     </div>
                 </div>
+
+                <hr class = "divider_relative">
+
+                <div class = "feature" id = "FirstName">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">First Name</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/> 
+                        </div>
+                    </div>
+                </div>
+
+                <hr class = "divider_relative">
+
+                <div class = "feature" id = "LastName">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">Last Name</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/> 
+                        </div>
+                    </div>
+                </div>
+
+                <hr class = "divider_relative">
+
+                <div class = "feature" id = "Email">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">Email</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/> 
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="location.replace('index.html')" id = "back" class="btn btn-primary" type="button" style="position: relative; right: 25%; ">Back  </button>
+
+
+
+                  
+
             </div>
+
+            <div class="col-sm-6" style="position:relative">
+                <div class = "feature" id = "Password">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">Password</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/> 
+                        </div>
+                    </div>
+                </div>
+
+                <hr class = "divider_relative">
+
+                <div class="feature" id="ConfirmPassword">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">Confirm Password</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/> 
+                        </div>
+                    </div>
+                </div>
+
+                <hr class = "divider_relative">
+
+                <div class="feature" id="DateofBirth">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">Date of Birth</h4>
+                        <div>
+                            <input class="form-control" placeholder="MM" maxlength="2" style = "width:27%; float:left"/>
+                            <input class="form-control" placeholder="DD" maxlength="2" style = "width:27%; float:left"/>
+                            <input class="form-control" style = "width:27%" type="tel" maxlength="4" placeholder="YYYY"/> 
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <hr class = "divider_relative">
+
+                <div class="feature" id="Telephone">
+                    <div class = "form-group">
+                        <h4 style="position:relative; text-align:left">Telephone</h4>
+                        <div>
+                            <input style = "width: 81%" type="text" class="form-control"/> 
+                        </div>
+                    </div>
+                </div>
+                <button id = "submit" class="btn btn-primary" type="button" style="position: relative; left: 25 ; ">Submit</button>
+            </div>
+
+
         </div>
+                    
+                                    
+                             
+           
+        
     </header>
+
+    
+
+    
 
     <script>
 
-        $(document).on('click', '#submit_signup', function(evt) {
-          evt.preventDefault();
-          window.location.replace("http://www.mit.edu/~uayyaz/bloodshare/pages/mode_select.html");
-         });
-
     </script>
-
 </body>
