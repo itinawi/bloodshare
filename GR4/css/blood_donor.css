@@ -98,7 +98,7 @@ table .pagination{
 }
 
 .divider-horizontal {
-    width: 450px;
+    width: 100%;
     margin: 0 9px;
     border-bottom: 1px solid #f2f2f2;
     border-bottom-color: #000;
@@ -120,4 +120,15 @@ div.timegrid-ylabels-window {
 div.timegrid-xlabels {
     position: absolute;
     left: 0px;
+}
+
+.left_col_class{
+  width:95%;
+}
+
+.divider_relative{
+  width:82%;
+  position:relative;
+  right:9%;
+  border-color:black
 }

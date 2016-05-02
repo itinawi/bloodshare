@@ -1,6 +1,5 @@
 .donor_mode:hover {
 	display: inline-block;
-	/*margin-left: 50px;*/
 	height: 300px;
 	width: 300px;
 	border: 4px solid red;
@@ -8,14 +7,12 @@
 
 .seeker_mode:hover {
 	display: inline-block;
-	/*margin-left: 50px;*/
 	height: 300px;
 	width: 300px;
 	border: 4px solid red;
 }
 
 .seeker_mode {
-	/*style="display: inline-block; margin-left: 50px; height: 300px; width: 300px; border:4px solid black;"*/
 	display: inline-block;
 	margin-left: 50px;
 	height: 300px;
@@ -24,10 +21,8 @@
 }
 
 .donor_mode {
-	/*style="display: inline-block; height:300px; width: 300px; border:4px solid black;"*/
 	display: inline-block;
 	height: 300px;
 	width: 300px;
 	border: 4px solid black;
-	/*margin-left: 50px;*/
 }

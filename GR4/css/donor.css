@@ -1,7 +1,15 @@
 #submit_button{
+  position: relative;
+  width:50.333333%;
+  left:0;
+}
+
+
+/*
+#submit_button{
   position: absolute;
   width:100%;
-  left:775px;
+  left:50%;
 }
 
 #submit_wrapper{
@@ -9,8 +17,6 @@
   top:0;
   left:0%;
 }
-
-/*
 
 #submit_button{
   position: absolute;

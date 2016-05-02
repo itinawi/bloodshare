@@ -7001,7 +7001,7 @@ input:focus {
   background-color: #3be6c4;
 }
 .close {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   opacity: 0.4;
 }
