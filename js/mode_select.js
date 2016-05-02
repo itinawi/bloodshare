@@ -8,4 +8,6 @@ $(document).ready(function() {
     window.location.replace("http://www.mit.edu/~uayyaz/bloodshare/pages/seeker_signup.html");
   });
 
+
+
 });
