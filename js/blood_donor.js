@@ -21,7 +21,13 @@ $(document).ready(function() {
     marker.setMap(map);
     myMarker = marker;
   });
+  $('.notifications_li').click({
+    $('#notifications_ul').html('<li class="notactive notifications_li"><a href="#">Daily</a></li><li class="notactive notifications_li"><a href="#">Weekly</a></li><li class="active notifications_li"><a href="#">Monthly</a></li>');
+
+  });
+
   */
+
   function add_disease(group,name){
     var box;
     box = document.getElementById("template-form").firstChild.cloneNode(true);
