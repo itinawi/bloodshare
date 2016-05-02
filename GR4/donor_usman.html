@@ -12,37 +12,49 @@
     <title>Donor Sign Up</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="css/blood_donor.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- jQuery -->
+    <!--script src="js/jquery.js"></script-->
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/donor.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/blood_donor.css" />
     <link rel="stylesheet" href="css/donor.css" />    
     <link rel="stylesheet" href="../css/browse.css" />
     <link rel="stylesheet" href="../css/timegrid.css" />
     <link rel="stylesheet" href="../css/themes.css" />
-
-
+    <!--script src="jquery/js/jquery-1.9.0.min.js"></script-->
      <!-- <link href="css/blood_donor.css" rel="stylesheet"> -->
 
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="../external_js/jquery-1.12.3.js"></script>
-    <script type="text/javascript" src="../js/blood_donor.js"></script>   
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="assets/citynames.json"></script>
+    <script type="text/javascript" src="../js/blood_donor.js"></script>
+
+    <!---script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-
      <!-- Location picker -->
     <script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
     <script src="../jquery-locationpicker-plugin/dist/locationpicker.jquery.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/angular/angular.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/bootstrap-tokenfield.min.js"></script>
+    <link href="css/bootstrap-tokenfield.min.css" rel="stylesheet" type="text/css">
+    <link href="css/tokenfield-typeahead.min.css" rel="stylesheet" type="text/css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -114,11 +126,10 @@
                         <div class="form-group">
                             <h4 style="position:relative; right:35%">Home Address</h4>
                             <div>
-                                <input style = "width: 400px" type="text" class="form-control" id="us2-address" />
+                                <input style = "width: 81%" type="text" class="form-control" id="us2-address" />
                             </div>
                         </div>
-                        <div id="us2" style="width: 400px; height: 300px;"></div>
-
+                        <div id="us2" style="width: 81%; height: 300px;"></div>
                         <script>
                             $('#us2').locationpicker({
                                 location: {
@@ -135,7 +146,7 @@
 
                     </div>
 
-                    <hr style="width:400px;position:relative; right:12%; border-color:black">
+                    <hr class = "divider_relative">
 
                     <div class = "feature" id = "blood-group">
                         <div class="form-group">
@@ -143,7 +154,7 @@
                             <div>
 
                                 <div class="form-group">
-                                  <select class="form-control" style="width:400px">
+                                  <select class="form-control" style="width:81%">
                                     <option>A+</option>
                                     <option>A-</option>
                                     <option>B+</option>
@@ -156,24 +167,24 @@
                             </div>
                         </div>
                     </div>
+                    <hr class = "divider_relative">
                     
-                    <hr style="width:400px;position:relative; right:12%; border-color:black">
 
                     <div class = "feature" id = "blood-group">
                         <div class="form-group">
                             <!-- <div style="position:relative; right:35%"> -->
                             <h4 style="position:relative; right:35%">Notifications</h4>
 
-                              <p style="position:relative; right:1%">How frequently do you want to be notified by blood seekers?</p>
+                              <p style="width:81%;position:relative; right:1%;text-align:left">How frequently do you want to be notified by blood seekers?</p>
 
-                                <select class="form-control" style="width:400px">
+                                <select class="form-control" style="width:81%">
                                     <option>Daily</option>
                                     <option>Weekly</option>
                                     <option>Monthly</option>
                                 </select>
                         </div>
                     </div>
-                    <hr style="width:400px;position:relative; right:12%; border-color:black">
+                    <hr class = "divider_relative">
                     <div class = "feature">
                         <div class="form-group">
                             <!-- <div style="position:relative; right:35%"> -->
@@ -181,28 +192,21 @@
 
                               <p style="position:relative; right:25%">Do you have transportation?</p>
 
-                            <select class="form-control" style="width:400px">
+                            <select class="form-control" style="width:81%">
                                 <option>Yes</option>
                                 <option>No</option>
                                 <option>Only in Emergency</option>
                             </select>
                         </div>
                     </div>
-                    <hr style="width:400px;position:relative; right:12%; border-color:black">
+                    <hr class = "divider_relative">
                     <div class = "feature">
-                        <div class="form-group">
+                        <div class="form-group"><!--data-role="tagsinput" -->
                           <h4 style="position:relative; right:23%">Countries visited before</h4>
                           <p style="position:relative; right:7%">Select countries you have visited in the last 2 month.</p>
-                          <select multiple data-role="tagsinput">
-                            <option value="Egypt">Egypt</option>
-                            <option value="France">France</option>                            
-                            <option value="Pakistan">Pakistan</option>
-                            <option value="Sudan">Sudan</option>
-                            <option value="Syria">Syria</option>                            
-                            <option value="United_States_of_America">United States of America</option>
-                            <option value="United_Kingdom">United Kingdom</option>                            
-                            <option value="India">India</option>
-                          </select>
+                            <div style = "text-align:left">
+                            <input id="city_names" type="text" style = "width:81%"/></input>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,36 +219,36 @@
                         <div id="mini-timegrid" tg:role="grid" tg:views="week" tg:eventsource="miniEventSource" tg:mini="true" tg:daystart="8" tg:dayend="23" tg:listener="showClassesDuringTime" tg:gridlistener="showClickedClassDetails" tg:gridlistenerinput="getClickedClass" style="width: 250px; height: 410px; position: relative; left:120px;" class="timegrid-default">
                           <div class="timegrid-iterator"></div>
                           <div media="print" class="timegrid-view print" style="top: 0px; height: 410px; display: block;">
-                            <div class="timegrid-grid-window" style="overflow: visible; top: 24px; left: 24px; right: 0px; bottom: 0px; height: 410px; width: 214px;">
-                              <div class="timegrid-grid" style="height: 410px; width: 214px;">
+                            <div class="timegrid-grid-window" style="overflow: visible; top: 24px; left: 24px; right: 0px; bottom: 0px; height: 100%; width: 100%;">
+                              <div class="timegrid-grid" style="height: 100%; width: 100%;">
                                 <div class="timegrid-events"></div>
                                 <table class="timegrid-gridlines">
                                   <tbody id = "timegrid-tbody">
                                     <tr id = "grid_hour-0" class="timegrid-hline" style="height: 15.9286px;">
-                                      <th classid="S0" class="timegrid-vline" style="width: 30.4286px;"></th>
-                                      <th classid="M0" class="timegrid-vline" style="width: 30.4286px;"></th>
-                                      <th classid="T0" class="timegrid-vline" style="width: 30.4286px;"></th>
-                                      <th classid="W0" class="timegrid-vline" style="width: 30.4286px;"></th>
-                                      <th classid="R0" class="timegrid-vline" style="width: 30.4286px;"></th>
-                                      <th classid="F0" class="timegrid-vline" style="width: 30.4286px;"></th>
-                                      <th classid="S0" class="timegrid-vline" style="width: 30.4286px;"></th>
+                                      <th classid="S0" class="timegrid-vline" style="width: 14.2890%;"></th>
+                                      <th classid="M0" class="timegrid-vline" style="width: 14.2890%;"></th>
+                                      <th classid="T0" class="timegrid-vline" style="width: 14.2890%;"></th>
+                                      <th classid="W0" class="timegrid-vline" style="width: 14.2890%;"></th>
+                                      <th classid="R0" class="timegrid-vline" style="width: 14.2890%;"></th>
+                                      <th classid="F0" class="timegrid-vline" style="width: 14.2890%;"></th>
+                                      <th classid="S0" class="timegrid-vline" style="width: 14.2890%;"></th>
                                     </tr>
                                   </tbody>
                                 </table>
                               </div>
                             </div>
                             <div class="timegrid-xlabels-window" style="height: 24px; width: 214px; left: 23px;">
-                              <div class="timegrid-xlabels" style="height: 24px; width: 214px; top: 0px;">
-                                <div class="timegrid-label" style="width: 30.4286px; left: 0px;">Sun</div>
-                                <div class="timegrid-label" style="width: 30.4286px; left: 30.4286px;">Mon</div>
-                                <div class="timegrid-label" style="width: 30.4286px; left: 60.8571px;">Tue</div>
-                                <div class="timegrid-label" style="width: 30.4286px; left: 91.2857px;">Wed</div>
-                                <div class="timegrid-label" style="width: 30.4286px; left: 121.714px;">Thu</div>
-                                <div class="timegrid-label" style="width: 30.4286px; left: 152.143px;">Fri</div>
-                                <div class="timegrid-label" style="width: 30.4286px; left: 182.571px;">Sat</div>
+                              <div class="timegrid-xlabels" style="height: 24px; width: 100%; top: 0px;">
+                                <div class="timegrid-label" style="width: 14.2890%; left: 0%">Sun</div>
+                                <div class="timegrid-label" style="width: 14.2890%; left: 14.2890%;">Mon</div>
+                                <div class="timegrid-label" style="width: 14.2890%; left: 28.578%;">Tue</div>
+                                <div class="timegrid-label" style="width: 14.2890%; left: 42.867%;">Wed</div>
+                                <div class="timegrid-label" style="width: 14.2890%; left: 57.156%;">Thu</div>
+                                <div class="timegrid-label" style="width: 14.2890%; left: 71.445%;">Fri</div>
+                                <div class="timegrid-label" style="width: 14.2890%; left: 85.734%;">Sat</div>
                               </div>
                             </div>
-                            <div class="timegrid-ylabels-window" style="width: 24px; height: 410px; top: 23px;">
+                            <div class="timegrid-ylabels-window" style="width: 24px; height: 100%; top: 23px;">
                               <div id = "timegrid-ylabels-id" class="timegrid-ylabels" style="height: 410px; width: 24px; left:0px;">
                               </div>
                             </div>
@@ -253,7 +257,7 @@
                       </div>
 
                     </div>
-                    <hr style="width:500px;position:relative; right:0; border-color:black">
+                    <hr style="width:90%;position:relative; right:0; border-color:black">
                     <div id = "diseases-form" class = "form">
                       <h4>Check for diseases</h4>
                       <p>Do you have any of the following diseases:</p>
@@ -266,7 +270,7 @@
                                   <h5 class = "disease_label">AIDs</h5>
                                 </div>
                                 <div >
-                                    <select class="form-control" style="width:200px">
+                                    <select class="form-control" style="width:100%">
                                         <option>Yes</option>
                                         <option>No</option>
                                         <option>Only in Emergency</option>
@@ -289,9 +293,6 @@
             </div>            
         </div>
     </header>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
